@@ -1,0 +1,202 @@
+JSON
+  4. Створити зовнішній репозиторій під назвою JSON.
+  5. Клонувати репозиторій JSON на локальний комп'ютер. - git clone https://github.com/ksuuy/JSON1.git
+  6. Всередині локального JSON створити файл “new.json”. - touch new.json
+  7. Додати файл під гіт. - git add new.json
+  8. Закомітити файл. - git commit -m "Файл додано"
+  9. Надіслати файл на зовнішній GitHub репозиторій. - git push
+  10. Відредагувати зміст файлу "new.json" - написати інформацію про себе (ПІБ, вік, кількість свійських тварин, майбутня бажана зарплата). Все написати у форматі JSON.- $ cat >>new.json
+{
+  "Ім'я": "Oksana"  ",
+  "Вік": 19,
+  "Кількість домашніх тварин": 2,
+  "Бажана зарплата": 30000
+}
+
+  11. Надіслати зміни на зовнішній репозиторій.-  git commit -a -m "Внесено зміни у форматі json" , git push
+
+  12. Створити файл preferences.json 
+  13. У файл preferences.json додати інформацію про свої уподобання (Улюблений фільм, улюблений серіал, улюблена їжа, улюблена пора року, сторона, яку хотіли б відвідати) у форматі JSON.
+$ cat >preferences.json
+{
+  "Улюбл    фільм":"The Shawshank Redemption",
+  "Улюбл   серіал": "Friends",
+  "Улюбл  їжа": "Суші",
+  "Улюбл  пора року": "Весна",
+  "Бажана країна для відвідування": "Італія"
+}
+
+
+  14. Створити файл sklls.json додати інформацію про скіли, які будуть вивчені на курсі у форматі JSON
+$ cat >skills.json
+
+{
+  "Skills ": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Python",
+    "SQL",
+    "Git"
+  ]
+}
+
+  15. Відправити відразу 2 файли на зовнішній репозиторій.
+ git add skills.json preferences.json
+ git commit -m "Додано файл preferences.json та skills.json"
+ git push
+
+  16. На веб-інтерфейсі створити файл bug_report.json.
+  17. Зробити Commit changes (зберегти) зміни на веб-інтерфейсі.
+  18. На веб-інтерфейсі модифікувати файл bug_report.json, додати баг репорт у форматі JSON.
+{
+  "Назва помилки": "Помилка 500",
+  "Опис": "Внутрішня помилка сервера"
+}
+  19. Зробити Commit changes (зберегти) зміни на веб-інтерфейсі.
+  20. Синхронізувати зовнішній та локальний репозиторій JSON
+git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 748 bytes | 35.00 KiB/s, done.
+From https://github.com/ksuuy/JSON1
+   271044b..5674311  main       -> origin/main
+error: invalid path 'bug_report.json.'
+Updating 271044b..5674311
+
+
+
+
+
+XML
+  21. Створити зовнішній репозиторій під назвою XML.
+  22. Клонувати XML репозиторій на локальний комп'ютер. - $ git clone https://github.com/ksuuy/XML1.git
+  23. Всередині локального XML створити файл “new.xml”. - cd XML1 / touch new.xml 
+  24. Додати файл під гіт. - git add new.xml
+  25. Закомтіти файл. - git commit -m "Додано файл new.json"
+  26. Надіслати файл на зовнішній GitHub репозиторій.- git push
+  27. Відредагувати зміст файлу "new.xml" - написати інформацію про себе (ПІБ, вік, кількість свійських тварин, майбутня бажана зарплата). Все написати у форматі XML.
+$ cat >> new.xml
+<person>
+  <name>Oksana</name>
+  <age>19</age>
+  <pets>1</pets>
+  <salary>3000</salary>
+</person>
+
+  28. Надіслати зміни на зовнішній репозиторій. - git commit -a -m "Додано інформацію про себе" / git push
+
+  29. Створити файл preferences.xml
+  30. У файл preferences.xml додати інформацію про свої переваги (Улюблений фільм, улюблений серіал, улюблена їжа, улюблена пора року, країна, яку хотіли б відвідати) у форматі XML.
+ cat >> preferences.xml
+<preferences>
+   <favoriteFilm>Narcoz</favoriteFilm>
+   <favoriteSerial>TedLasso</favoriteSerial>
+   <favoriteFood>Pizza</favoriteFood>
+   <favoriteSeason>Summer</favoriteSeason>
+   <favoriteCountry>Ispania</favoriteCountry>
+</preferences>
+  31. Створити файл skills.xml додати інформацію про скіли, які будуть вивчені на курсі у форматі XML
+ cat >>skills.xml
+<skills>
+  <skill>HTML</skill>
+  <skill>CSS</skill>
+  <skill>JavaScript</skill>
+  <skill>Python</skill>
+  <skill>SQL</skill>
+  <skill>Git</skill>
+</skills>
+
+  32. Зробити коміт в один рядок.
+git add skills.xml preferences.xml
+git commit -m "Додано файли skills.xml та preferences.xml"
+
+  33. Надіслати одразу 2 файли на зовнішній репозиторій. - git push
+  34. На веб-інтерфейсі створити файл bug_report.xml.
+  35. Зробити Commit changes (зберегти) зміни на веб-інтерфейсі.
+  36. На веб-інтерфейсі модифікувати файл bug_report.xml, додати баг репорт у форматі XML.
+  37. Зробити Commit changes (зберегти) зміни на веб-інтерфейсі.
+<error>
+  <Назва_помилки>Помилка 500</Назва_помилки>
+  <Опис>Внутрішня помилка сервера</Опис>
+</error>
+  38. Синхронізувати зовнішній та локальний репозиторій XML
+git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 759 bytes | 44.00 KiB/s, done.
+From https://github.com/ksuuy/XML1
+   47d39b5..ef2a756  main       -> origin/main
+Updating 47d39b5..ef2a756
+Fast-forward
+ bug_report.xml | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 bug_report.xml
+
+
+TXT
+  1. Створити зовнішній репозиторій із назвою TXT.
+  2. Клонувати TXT репозиторій на локальний комп'ютер. - $ git clone https://github.com/ksuuy/TXT1.git
+  3. Всередині локального TXT створити файл “new1.txt”.
+$ cd TXT1
+$ touch new.txt
+  4. Додати файл під гіт. - $ git add new.txt
+  5. Закомтіти файл. - $ git commit -m "Додано файл new.txt"
+  6. Надіслати файл на зовнішній GitHub репозиторій. - git push
+  7. Відредагувати зміст файлу "new.txt" - написати інформацію про себе (ПІБ, вік, кількість свійських тварин, майбутня бажана зарплата). Все написати у форматі TXT.
+$ cat >> new.txt
+ПІБ: Мельник Оксана Олегівна
+Вік: 19 років
+Кількість свійських тварин: 1
+Майбутня бажана зарплата: $30 000 на рік
+
+  8. Надіслати зміни на зовнішній репозиторій.
+$ git add new.txt
+$ git commit -m "Додана інформація про себе"
+$ git push
+  9. Створити файл preferences.txt
+  10. У файл preferences.txt” додати інформацію про свої уподобання (Улюблений фільм, улюблений серіал, улюблена їжа, улюблена пора року, сторона, яку хотіли б відвідати) у форматі TXT.
+$ cat >> preferences.txt
+Улюблений фільм: Зелена миля
+Улюблений серіал: Гра престолів
+Улюблена їжа: Суші
+Улюблена пора року: Весна
+Країна,  яку хотіли б відвідати: Японія
+
+  11. Створити файл sklls.txt додати інформацію про скіли, які будуть вивчені на курсі у форматі TXT
+$ cat >>skills.txt
+HTML
+CSS
+JavaScript
+Python
+SQL
+Git
+
+  12. Зробити коміт в один рядок.
+$ git add skills.txt preferences.txt
+$ git commit -m "Додано файли skills.txt та preferences.txt"
+  13. Надіслати одразу 2 файли на зовнішній репозиторій.
+$ git push
+  14. На веб-інтерфейсі створити файл bug_report.txt.
+  15. Зробити Commit changes (зберегти) зміни на веб-інтерфейсі.
+  16. На веб-інтерфейсі модифікувати файл bug_report.txt, додати баг репорт у форматі TXT.
+Назва помилки: Помилка 404
+Опис: Сторінку не знайдено
+  17. Зробити Commit changes (зберегти) зміни на веб-інтерфейсі.
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 735 bytes | 40.00 KiB/s, done.
+From https://github.com/ksuuy/TXT1
+   6a991bc..fcb805e  main       -> origin/main
+Updating 6a991bc..fcb805e
+Fast-forward
+ bug_report.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 bug_report.txt
